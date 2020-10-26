@@ -1,0 +1,43 @@
+<app-navigation name="Page 1" backgroundColor='gray' textColor='white'></app-navigation>
+
+
+
+
+
+<!-- <app-textbox label="Name" (onChange)="handelNameInput($event)"></app-textbox>
+<app-textbox type="email" label="Email" (onChange)="handelEmailInput($event)"></app-textbox>
+<app-textbox type="password" label="Password" (onChange)="handelPasswordInput($event)"></app-textbox>
+
+<p>{{myDetails}}</p>
+<button (click)="hadelClick()">Submit</button> -->
+<!-- 
+<div *ngIf="showCheckitem; else cElse;"  >
+<p>Checked Item</p>
+</div>
+<ng-template #cElse>select the box</ng-template>
+<ul>
+    <li *ngFor="let item of ckeckedList">{{item.text}}</li>
+</ul>
+
+
+<app-select-item  
+*ngFor="let item of textBoxes" 
+[text]="item.name"
+[id]="item.id"
+(onChecked)="OnItemChange($event)"
+>
+</app-select-item>
+<br>
+<hr>
+<app-select-item
+text="show checked" (onChecked)="onListChecked($event)">
+</app-select-item> -->
+
+<div class="cardflex">
+<app-card 
+(onclick)="handelclick($event)" *ngFor="let item of cards" [title]="item.title" [content]="item.content" ></app-card>
+</div>
+
+<ul>
+    <li *ngFor="let item of cardList">{{item.title}}</li>
+</ul>
